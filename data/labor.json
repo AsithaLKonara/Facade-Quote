@@ -1,0 +1,21 @@
+{
+    "welding": {
+        "pricePerFoot": 150
+    },
+    "assembly": {
+        "basePrice": 1500,
+        "percentageOfMaterial": 0.15
+    },
+    "design": {
+        "graphicDesign": 3000,
+        "logoDesign": 10000,
+        "brandingPackage": 35000,
+        "uiDesign": 25000
+    },
+    "webDev": {
+        "landingPage": 50000,
+        "businessWebsite": 120000,
+        "ecommerce": 250000
+    },
+    "workerHourlyRate": 1200
+}

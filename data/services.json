@@ -1,0 +1,52 @@
+{
+  "services": [
+    {
+      "id": "discovery-workshop",
+      "name": "Discovery & Solution Design",
+      "category": "CONSULTATION",
+      "defaultRole": "architect",
+      "baseHours": 24,
+      "description": "Paid discovery phase to define scope, architecture, and detailed estimation."
+    },
+    {
+      "id": "mvp-startup",
+      "name": "Startup / MVP Build",
+      "category": "FULLSTACK",
+      "defaultRole": "mid",
+      "baseHours": 160,
+      "description": "Limited scope, fast-to-market development for early stage products."
+    },
+    {
+      "id": "growth-scale",
+      "name": "Growth / Scaling Phase",
+      "category": "FULLSTACK",
+      "defaultRole": "senior",
+      "baseHours": 320,
+      "description": "Advanced integrations, analytics, and performance optimization."
+    },
+    {
+      "id": "enterprise-system",
+      "name": "Enterprise Grade System",
+      "category": "FULLSTACK",
+      "defaultRole": "senior",
+      "baseHours": 640,
+      "description": "Security-first, audit-trailed, high-availability enterprise applications."
+    },
+    {
+      "id": "ui-ux-design-service",
+      "name": "UI/UX Design Package",
+      "category": "UI_UX",
+      "defaultRole": "designer",
+      "baseHours": 40,
+      "description": "User experience research and high-fidelity UI designs in Figma."
+    },
+    {
+      "id": "maintenance-retainer",
+      "name": "Monthly Support & SLA",
+      "category": "MAINTENANCE",
+      "defaultRole": "mid",
+      "baseHours": 20,
+      "description": "SLA-based maintenance, security patches, and minor feature updates."
+    }
+  ]
+}
