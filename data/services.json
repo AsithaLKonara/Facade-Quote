@@ -1,6 +1,14 @@
 {
   "services": [
     {
+      "id": "single-page-portfolio",
+      "name": "Single Page Portfolio / Landing Page",
+      "category": "FRONTEND",
+      "defaultRole": "junior",
+      "baseHours": 10,
+      "description": "Simple, high-impact single-page website for businesses or personal portfolios."
+    },
+    {
       "id": "discovery-workshop",
       "name": "Discovery & Solution Design",
       "category": "CONSULTATION",
