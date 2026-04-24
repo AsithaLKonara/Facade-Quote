@@ -11,7 +11,7 @@
   ],
   "overhead": {
     "percentage": 0.15,
-    "minFeeLKR": 25000
+    "minFeeLKR": 5000
   },
   "margins": {
     "customBuild": 0.35,
@@ -34,7 +34,7 @@
     "highUncertainty": 0.25
   },
   "passThrough": {
-    "hostingBase": 15000,
+    "hostingBase": 5000,
     "sslCert": 3500,
     "domainReg": 4500,
     "apiIntegrationBase": 8000
