@@ -17,7 +17,7 @@ export default function AdminDashboard() {
         setProjects(getProjects());
     };
 
-    const totalRevenue = projects.reduce((total, p) => total + p.quote.totalCost, 0);
+    const totalRevenue = projects.reduce((total, p) => total + (p.quote.grandTotal || 0), 0);
 
     const stats = [
         { label: 'Live Projects', value: projects.length.toString(), icon: '📁' },
@@ -101,7 +101,7 @@ export default function AdminDashboard() {
                                                     <option value="completed">Completed</option>
                                                 </select>
                                             </td>
-                                            <td className="py-8 pr-4 font-black italic tracking-tighter text-lg">{p.quote.totalCost.toLocaleString()}</td>
+                                            <td className="py-8 pr-4 font-black italic tracking-tighter text-lg">{p.quote.grandTotal.toLocaleString()}</td>
                                             <td className="py-8 pr-4 text-right">
                                                 <button className="px-6 py-2 bg-white/5 text-[10px] font-black uppercase tracking-widest rounded-full border border-white/10 hover:bg-white/10 transition-all italic">View Logic</button>
                                             </td>

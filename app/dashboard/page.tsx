@@ -56,7 +56,7 @@ export default function DashboardPage() {
                                         <div className="flex items-center gap-8 w-full md:w-auto justify-between md:justify-start">
                                             <div className="text-right">
                                                 <p className="text-[10px] text-gray-500 font-black uppercase tracking-tighter">Est. Investment</p>
-                                                <p className="text-lg font-black italic tracking-tighter">LKR {(p.quote as any).grandTotal?.toLocaleString() || p.quote.totalCost.toLocaleString()}</p>
+                                                <p className="text-lg font-black italic tracking-tighter">LKR {p.quote.grandTotal.toLocaleString()}</p>
                                             </div>
                                             <Link
                                                 href={`/quote/${p.id}/pdf`}

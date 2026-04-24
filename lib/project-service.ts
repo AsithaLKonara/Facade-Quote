@@ -1,4 +1,4 @@
-import { Project, QuoteResponse, QuoteRequest } from '../types/quote';
+import { Project, ProjectQuoteResponse, ProjectQuoteRequest } from '../types/quote';
 
 const STORAGE_KEY = 'a-zone-projects';
 
@@ -8,11 +8,12 @@ export function getProjects(): Project[] {
     return stored ? JSON.parse(stored) : [];
 }
 
-export function createProject(request: QuoteRequest, quote: QuoteResponse): Project {
+export function createProject(request: ProjectQuoteRequest, quote: ProjectQuoteResponse): Project {
     const newProject: Project = {
         id: `PRJ-${Math.random().toString(36).substr(2, 9).toUpperCase()}`,
         clientName: 'Demo Client',
-        projectName: `${request.serviceType.replace(/-/g, ' ')} Project`,
+        projectName: request.projectName,
+        clientLocation: request.clientLocation,
         status: 'pending',
         quote: quote,
         dateCreated: new Date().toISOString().split('T')[0],

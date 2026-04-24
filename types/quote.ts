@@ -73,12 +73,20 @@ export interface ProjectQuoteResponse {
   status: 'valid' | 'invalid';
 }
 
+export interface ProjectTask {
+  id: string;
+  name: string;
+  status: 'todo' | 'in-progress' | 'completed';
+  estimatedHours: number;
+}
+
 export interface Project {
   id: string;
   clientName: string;
   projectName: string;
   clientLocation: 'local' | 'export';
-  status: 'lead' | 'discovery' | 'proposal' | 'development' | 'testing' | 'uat' | 'deployed' | 'completed';
+  status: 'pending' | 'design' | 'production' | 'assembly' | 'delivery' | 'completed' | 'lead' | 'discovery' | 'proposal' | 'development' | 'testing' | 'uat' | 'deployed';
   quote: ProjectQuoteResponse;
   dateCreated: string;
+  tasks?: ProjectTask[];
 }
